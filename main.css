@@ -7,7 +7,7 @@ a {
   color: black;
 }
 :root {
-  --main-blue:red;
+  --main-blue:#13e5e0;
 }
 /* <----------------------------   helpers   -------------------------------> */
 
@@ -33,7 +33,9 @@ a {
   width: 100%;
 }
 .landing-text {
+  background: rgba(0, 0, 0, 0.5);
   color: var(  --main-blue);
+  padding: 20px;
   font-size: 40px;
   position: absolute;
   top: 200px;
@@ -143,10 +145,11 @@ a {
 .cover-image-text {
   color: var( --main-blue);
   font-size: 40px;
-  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
   /* left: 100px; */
   /* flex-direction: column; */
-  width: 50%;
+
   /* height: 100%; */
   align-items: center;
   margin: auto 10%;
@@ -370,7 +373,12 @@ a {
 }
 /* <-------------------------------    end services.html   ---------------------------> */
 /* <-------------------------------    hover   ---------------------------> */
-
+.button-blue:hover {
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var( --main-blue);
+  border: solid 2px white;
+}
 .button:hover {
   background-color: white;
   color: #13e5e0;
