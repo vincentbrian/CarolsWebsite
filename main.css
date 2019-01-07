@@ -197,12 +197,18 @@ a {
   width: 50%;
 }
 .service-image {
-  width: 100%;
+  /* width: 100%; */
 }
 .services-button {
   width: 50%;
   margin: 0px auto 20px auto;
 
+}
+.specialty_service_img {
+  width: 300px;
+}
+.img-box img {
+  height: 150px;
 }
 .services-button p {
 
@@ -236,11 +242,11 @@ a {
   display: flex;
   justify-content: space-evenly;
   background-color:#13e5e0;
-  padding-bottom: 20px;
+
 
 }
 .about-image {
-  padding:10px;
+
   display: flex;
   justify-content: ;
 }
@@ -323,6 +329,9 @@ a {
 .footer {
   background-color: darkgrey;
   padding: 30px 0px;
+}
+.footer-nav a, li {
+  color: white;
 }
 .footer-nav ul {
   list-style-type: none;
