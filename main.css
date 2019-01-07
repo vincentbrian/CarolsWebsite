@@ -430,3 +430,7 @@ only screen and (min-width:321px) and (max-width:768px)
 # Desktop
 only screen and (min-width:769px)*/
 /* <-------------------------------    END: size key   ---------------------------> */
+
+@media screen and (max-width: 500px) {
+
+}
