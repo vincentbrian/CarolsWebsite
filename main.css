@@ -360,6 +360,10 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+.email {
+  display: flex;
+  justify-content: space-between;
+}
 .footer-link .phone {
 
   display: flex;
