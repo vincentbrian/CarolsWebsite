@@ -469,6 +469,12 @@ only screen and (min-width:769px)*/
   p {
     line-height: auto;
   }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger img {
+    height: 30px;
+  }
   .cover-image-text-container {
     display: flex;
     justify-content: center;
