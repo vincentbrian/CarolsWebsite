@@ -14,7 +14,7 @@
 
 $('.top').on('click', function (e){
   e.preventDefault();
-  $("html, body").animate({scrollTop: 0}, 1000);
+  $("html, body").animate({scrollTop: 0}, 800);
 })
 
 $('a[href*=#]:not([href=#])').click(function() {
@@ -26,15 +26,8 @@ $('a[href*=#]:not([href=#])').click(function() {
     if (target.length) {
       $('html,body').animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 800);
       return false;
     }
   }
 });
-// $("a[href^='#']").on("click", function(e) {
-//   e.preventDefault();
-//
-//   return $("html, body").animate({
-//     scrollTop: $(this.hash).offset().top - offset
-//   }, 300);
-// });

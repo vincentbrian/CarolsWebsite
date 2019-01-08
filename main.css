@@ -168,6 +168,11 @@ a {
   font-size: 20px;
   color: white;
 }
+.service-anchor {
+  /* <--------------  anchor point at top of div  ------------------> */
+  padding-top: 50px;
+  margin-top: -50px;
+}
 .service {
   border: black 1px solid;
   text-align: center;
@@ -325,7 +330,7 @@ a {
 .map-image {
   background-image: url("map.png");
   height: 400px;
-  background-position: bottom;
+  background-position: 50% 75%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
