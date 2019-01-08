@@ -171,56 +171,6 @@ p {
   font-size: 20px;
   color: white;
 }
-.service-anchor {
-  /* <--------------  anchor point at top of div  ------------------> */
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.service {
-  border: black 1px solid;
-  text-align: center;
-  margin: 10px;
-  width: 33.33%;
-  padding: 50px;
-  margin-bottom: 30px;
-
-}
-.service-cover-image {
-  background-image: url("small-dogs.jpg");
-  height: 600px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.service-text {
-
-}
-.service-types {
-  display: flex;
-}
-.service-header {
-  text-align: center;
-  margin: 0px auto;
-  width: 50%;
-}
-.service-image {
-  /* width: 100%; */
-}
-.services-button {
-  width: 50%;
-  margin: 0px auto 20px auto;
-
-}
-.specialty_service_img {
-  width: 300px;
-}
-.img-box img {
-  height: 150px;
-}
-.services-button p {
-
-}
 .button-blue {
   margin: 0 auto;
   display: flex;
@@ -376,6 +326,56 @@ p {
   padding: 10px;
 }
 /* <-------------------------------    services.html   ---------------------------> */
+.service-anchor {
+  /* <--------------  anchor point at top of div  ------------------> */
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.service {
+  border: black 1px solid;
+  text-align: center;
+  margin: 10px;
+  width: 33.33%;
+  padding: 50px;
+  margin-bottom: 30px;
+
+}
+.service-cover-image {
+  background-image: url("small-dogs.jpg");
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.service-text {
+
+}
+.service-types {
+  display: flex;
+}
+.service-header {
+  text-align: center;
+  margin: 0px auto;
+  width: 50%;
+}
+.service-image {
+  /* width: 100%; */
+}
+.services-button {
+  width: 50%;
+  margin: 0px auto 20px auto;
+
+}
+.specialty_service_img {
+  width: 300px;
+}
+.img-box img {
+  height: 150px;
+}
+.services-button p {
+
+}
 .services-service {
 
   text-align: center;
@@ -465,6 +465,49 @@ only screen and (min-width:321px) and (max-width:768px)
 only screen and (min-width:769px)*/
 /* <-------------------------------    END: size key   ---------------------------> */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  p {
+    line-height: auto;
+  }
+  .cover-image-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 90%;
+  }
+  .cover-image-text {
+    color: var( --main-blue);
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    align-items: center;
+    margin: auto 10%;
+  }
+  .cover-image-text h1 {
+    font-size: 35px;
+    margin: 10px 0px;
+  }
+  .cover-image-text h3 {
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+  }
+  .cover-image-text p {
+    font-size: 12px;
+  }
+  .service-types {
+    display: flex;
+    flex-direction: column;
+  }
+  .service {
+    border: black 1px solid;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+
+  }
 
 }
