@@ -187,8 +187,7 @@ a:hover {
   /* <----------------------------  about page  -------------------------------> */
 .about-anchor {
   /* <--------------  anchor point at top of div  ------------------> */
-  padding-top: 50px;
-  margin-top: -50px;
+
 }
 .about-container {
   display: flex;

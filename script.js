@@ -12,10 +12,10 @@
 //
 // smoothScroll(".section2", 1000);
 
-$('.top').on('click', function (e){
-  e.preventDefault();
-  $("html, body").animate({scrollTop: 0}, 800);
-})
+// $('.top').on('click', function (e){
+//   e.preventDefault();
+//   $("html, body").animate({scrollTop: 0}, 800);
+// })
 
 $('a[href*=#]:not([href=#])').click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
