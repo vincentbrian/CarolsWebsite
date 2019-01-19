@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Trebuchet MS", Times, serif;
 }
 a {
   text-decoration: inherit;
@@ -8,6 +9,13 @@ a {
 }
 :root {
   --main-blue:#13e5e0;
+}
+p {
+  line-height: 24px;
+}
+a:hover {
+  color: lightgrey;
+
 }
 /* <----------------------------   helpers   -------------------------------> */
 
@@ -72,8 +80,7 @@ a {
 .underline {
   border-bottom: 1px solid  var(  --main-blue);
   width: 50%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin: 20px auto;
 }
 .section-about {
   display: flex;
@@ -85,6 +92,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
 
 }
 
@@ -106,8 +115,6 @@ a {
   /* margin: 0px;
   flex-direction: column; */
 
-
-
 }
 .navbar-links li {
   padding: 10px;
@@ -117,7 +124,7 @@ a {
   display: none;
 
 }
-.hamburger  img {
+.hamburger img {
 
 }
 .hide {
@@ -147,10 +154,6 @@ a {
   font-size: 40px;
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  /* left: 100px; */
-  /* flex-direction: column; */
-
-  /* height: 100%; */
   align-items: center;
   margin: auto 10%;
 }
@@ -166,45 +169,6 @@ a {
 
   font-size: 20px;
   color: white;
-}
-.service {
-  border: black 1px solid;
-  text-align: center;
-  margin: 10px;
-  width: 33.33%;
-  padding: 50px;
-  margin-bottom: 30px;
-
-}
-.service-cover-image {
-  background-image: url("small-dogs.jpg");
-  height: 600px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.service-text {
-
-}
-.service-types {
-  display: flex;
-}
-.service-header {
-  text-align: center;
-  margin: 0px auto;
-  width: 50%;
-}
-.service-image {
-  width: 100%;
-}
-.services-button {
-  width: 50%;
-  margin: 0px auto 20px auto;
-
-}
-.services-button p {
-
 }
 .button-blue {
   margin: 0 auto;
@@ -223,7 +187,10 @@ a {
 }
 
   /* <----------------------------  about page  -------------------------------> */
+.about-anchor {
+  /* <--------------  anchor point at top of div  ------------------> */
 
+}
 .about-container {
   display: flex;
   justify-content: center;
@@ -235,18 +202,18 @@ a {
   display: flex;
   justify-content: space-evenly;
   background-color:#13e5e0;
-  padding-bottom: 20px;
-  text-align: center;
+
+
 }
 .about-image {
-  padding:10px;
+
   display: flex;
   justify-content: ;
 }
 .about-image img {
   height: 100%;
   width: 100%;
-  border: 1px dotted white;
+
 
 
 }
@@ -254,6 +221,13 @@ a {
   display: flex;
   flex-direction: column;
   align-self: center;
+}
+
+.bio  {
+
+  margin:0px;
+  padding:0px 40px;
+  text-indent:20px;
 }
 .button {
   margin: 0 auto;
@@ -307,7 +281,7 @@ a {
 .map-image {
   background-image: url("map.png");
   height: 400px;
-  background-position: bottom;
+  background-position: 50% 75%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -315,6 +289,9 @@ a {
 .footer {
   background-color: darkgrey;
   padding: 30px 0px;
+}
+.footer-nav a, li {
+  color: white;
 }
 .footer-nav ul {
   list-style-type: none;
@@ -326,9 +303,14 @@ a {
   font-size: 25px;
 }
 .footer-link {
+  align-items: center;
   width: 33.33%;
   display: flex;
   justify-content: space-evenly;
+}
+.email {
+  display: flex;
+  justify-content: space-between;
 }
 .footer-link .phone {
 
@@ -342,6 +324,60 @@ a {
   padding: 10px;
 }
 /* <-------------------------------    services.html   ---------------------------> */
+.service-anchor {
+  /* <--------------  anchor point at top of div  ------------------> */
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.service {
+  border: black 1px solid;
+  text-align: center;
+  margin: 10px;
+  width: 33.33%;
+  margin-bottom: 30px;
+
+}
+.service-cover-image {
+  background-image: url("small-dogs.jpg");
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.service-text p {
+  text-indent: 20px;
+}
+.service-types {
+  display: flex;
+}
+.service-header {
+  text-align: center;
+  margin: 0px auto;
+  width: 50%;
+}
+.service-image {
+  /* width: 100%; */
+}
+.services-button {
+  /* width: 50%;
+  margin: 0px auto 20px auto;
+  text-align: center; */
+  margin: 0px auto 20px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.specialty_service_img {
+  width: 300px;
+}
+.img-box img {
+  height: 150px;
+}
+.services-button p {
+
+}
 .services-service {
 
   text-align: center;
@@ -430,3 +466,127 @@ only screen and (min-width:321px) and (max-width:768px)
 # Desktop
 only screen and (min-width:769px)*/
 /* <-------------------------------    END: size key   ---------------------------> */
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  html {
+    margin:0px;
+  }
+  p {
+    line-height: auto;
+  }
+  .about-anchor {
+    margin: 0px;
+    padding: 0px;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-text {
+    height: 100%;
+  }
+  .about-section {
+    height: ;
+  }
+  .back-top-anchor {
+    font-size: 15px;
+  }
+  .bio {
+    font-size: 14px;
+  }
+  .cover-image {
+    width: 100%;
+    height: 400px;
+  }
+  .cover-image-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .col-half {
+   width: 100%;
+  }
+  .cover-image-text {
+
+  }
+  .cover-image-text h1 {
+    font-size: 35px;
+    margin: 10px 0px;
+  }
+  .cover-image-text h3 {
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+  }
+  .cover-image-text p {
+    font-size: 12px;
+  }
+  .email {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger img {
+    height: 30px;
+  }
+  .img-box {
+    width: %;
+  }
+  .image-text-box {
+    display: none;
+  }
+  .map {
+    width: 100;
+    height: 200px;
+  }
+  .map-image {
+    background-image: url(map.png);
+    height: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .navbar-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .service {
+    border: black 1px solid;
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    padding: 20px;
+
+  }
+  .service-types {
+    flex-direction: column;
+  }
+  .specialty_service_img {
+    width: 100%;
+  }
+  .footer-nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px auto;
+
+  }
+  .none-icon_email {
+    display: none;
+  }
+}
