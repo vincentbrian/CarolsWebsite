@@ -472,6 +472,10 @@ only screen and (min-width:769px)*/
 }
 
 @media screen and (max-width: 700px) {
+
+  .hide {
+    display: none;
+  }
   h1 {
     font-size: 26px;
   }
