@@ -14,7 +14,7 @@ p {
   line-height: 24px;
 }
 a:hover {
-  color: lightgrey;
+  color: var(  --main-blue);
 
 }
 /* <----------------------------   helpers   -------------------------------> */
@@ -110,10 +110,8 @@ a:hover {
 .navbar-links ul {
   display: flex;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  /* margin: 0px;
-  flex-direction: column; */
+
+
 
 }
 .navbar-links li {
@@ -437,6 +435,9 @@ a:hover {
 .step-text {
   width: 50%;
 }
+.step-text p {
+  width: 80%;
+}
 .header {
   text-align: center;
 }
@@ -467,7 +468,17 @@ only screen and (min-width:321px) and (max-width:768px)
 only screen and (min-width:769px)*/
 /* <-------------------------------    END: size key   ---------------------------> */
 
+
+@media screen and (min-width: 700px) {
+
+
+}
+
 @media screen and (max-width: 700px) {
+
+  .hide {
+    display: none;
+  }
   h1 {
     font-size: 26px;
   }
@@ -530,9 +541,6 @@ only screen and (min-width:769px)*/
     display: flex;
     justify-content: center;
   }
-  .navbar-links {
-    display: none;
-  }
   .hamburger {
     display: flex;
   }
@@ -586,7 +594,22 @@ only screen and (min-width:769px)*/
     margin: 0px auto;
 
   }
+  .navbar-links {
+    display: ;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    /* list-style-type: none;
+    margin: 0px; */
+  }
+
   .none-icon_email {
     display: none;
+  }
+  .right-nav {
+    display: flex;
+    flex-direction: column;
   }
 }
