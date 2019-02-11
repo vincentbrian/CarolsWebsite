@@ -435,6 +435,9 @@ a:hover {
 .step-text {
   width: 50%;
 }
+.step-text p {
+  width: 80%;
+}
 .header {
   text-align: center;
 }
