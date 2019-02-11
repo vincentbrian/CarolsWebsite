@@ -14,7 +14,7 @@ p {
   line-height: 24px;
 }
 a:hover {
-  color: var(  --main-blue);;
+  color: var(  --main-blue);
 
 }
 /* <----------------------------   helpers   -------------------------------> */
@@ -109,12 +109,9 @@ a:hover {
 }
 .navbar-links ul {
   display: flex;
-
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  /* margin: 0px;
-  flex-direction: column; */
+
+
 
 }
 .navbar-links li {
@@ -468,6 +465,12 @@ only screen and (min-width:321px) and (max-width:768px)
 only screen and (min-width:769px)*/
 /* <-------------------------------    END: size key   ---------------------------> */
 
+
+@media screen and (min-width: 700px) {
+
+
+}
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 26px;
@@ -587,14 +590,14 @@ only screen and (min-width:769px)*/
   .navbar-links {
     display: ;
   }
-  ----------------
+
   .navbar-links ul {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    margin: 0px;
+    /* list-style-type: none;
+    margin: 0px; */
   }
-  -------------
+
   .none-icon_email {
     display: none;
   }
