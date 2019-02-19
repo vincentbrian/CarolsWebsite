@@ -219,6 +219,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-self: center;
+  padding: 30px 0px;
 }
 
 .bio  {
@@ -357,23 +358,31 @@ a:hover {
 .service-image {
   /* width: 100%; */
 }
-.services-button {
+.service-statement {
   /* width: 50%;
   margin: 0px auto 20px auto;
   text-align: center; */
-  margin: 0px auto 20px auto;
+  /* margin: 0px auto 20px auto;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 
+  margin: 0px auto 20px auto;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  width: 60%;
 }
+
+
+
 .specialty_service_img {
   width: 300px;
 }
 .img-box img {
   height: 150px;
 }
-.services-button p {
+.service-statement p {
 
 }
 .services-service {
@@ -580,6 +589,10 @@ only screen and (min-width:769px)*/
     padding: 20px;
 
   }
+  .service-statement h1 {
+    /* width: 50%; */
+    font-size: 14px;
+  }
   .service-types {
     flex-direction: column;
   }
@@ -593,6 +606,9 @@ only screen and (min-width:769px)*/
     padding: 0px;
     margin: 0px auto;
 
+  }
+  .gallery-image {
+    height: 150px;
   }
   .navbar-links {
     display: ;
